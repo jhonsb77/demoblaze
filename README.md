@@ -34,7 +34,7 @@ Estructura del proyecto
 - utils: configuracion del driver correspondiente al navegador donde se ejecutaran las pruebas
 
 Instrucciones de ejecucion
-1. Clonar el proyecto del repositorio mediante el comando git clone en la carpeta deseada de su equipo
+1. Clonar el proyecto del repositorio https://github.com/jhonsb77/demoblaze.git mediante el comando git clone en la carpeta deseada de su equipo
 2. En el etorno de desarrrollo, seleccionar la opcion "File" y posteriormente la opcion "Open". Alli seleccionara el proyecto guardado en la ruta del paso anterior
 3. Esperar a que el proyecto se configure y descargue las dependecias, si esto no se realiza, en el archivo "build.gradle" seleccionar la opcion "reload all gradle projects"
 ![img_2.png](img_2.png)
