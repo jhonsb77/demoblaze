@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">DemoBlaze carrito de compra</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="635ca78275faabcb5ddc78855ffaeb60eac3ac04145456a61994baff3c847c2d.html">Como Usuario Del Portal Https://Www.Demoblaze.Com/</a></span>
+                > <span class="truncate-60"><a
+                    href="e0bebe4aff0afbc0ef59662b237c3ce3d4faf9b16a39a0c2939e18078c858f10.html">Realizar flujo de compra con dos productos </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-09-2023 20:23</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Como Usuario Del Portal Https://Www.Demoblaze.Com/ </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                deseo seleccionar los productos alli ofrecidos<br />
+para poder realizar su compra
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6440f747a4fac16ef981c5e5efc63bbadcf4319e81889ba9852ebac97ab332ad.html">Realizar Compra
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Realizar flujo de compra con dos productos
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given ingreso al portal demoblaze<br>When agrego los productos al carrito de compra "&lt;producto1&gt;" "&lt;producto2&gt;"<br>And visualizo el carrito con los productos agregados "&lt;producto1&gt;" "&lt;producto2&gt;"<br>And completo el formulario de compra "&lt;nombre&gt;" "&lt;pais&gt;" "&lt;ciudad&gt;" "&lt;numeroTarjeta&gt;" "&lt;mes&gt;" "&lt;anio&gt;"<br>Then verifico que la compra se haya realizado correctamente</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 1: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c273076fe9cf037cdf736c1b47a9304d496e70c13092daccbe63b2360f5b265a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e9a95b92153e2b214c45b817b0b80c7b29483c9bbae04356d481ba5fb508bcb7.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="8b0b8636ed44d7539addbe7f3034c1e9806d412d710a2f5bc39642ef0baab23e.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="8b0b8636ed44d7539addbe7f3034c1e9806d412d710a2f5bc39642ef0baab23e.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="28d7f75a527cbad85896753ad70fdded14b3600df7155d46891298588b19d08f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d3d1c45dfe6f2dfeec9264692bb5d00ba33aa20f350d05754826fa1741c8235f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="ae9ba6be832c3194fc8a2fda80658481a1f910dc26b766cec5d5309099f41935.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="ae9ba6be832c3194fc8a2fda80658481a1f910dc26b766cec5d5309099f41935.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="ae9ba6be832c3194fc8a2fda80658481a1f910dc26b766cec5d5309099f41935.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="39e768c74810d5885b3be9309197dd72372c0a95a0c1c2f9323d6d0e05de9652.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="39e768c74810d5885b3be9309197dd72372c0a95a0c1c2f9323d6d0e05de9652.png" title=" 1: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 2: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="b1e198412b167c1f60a27aaebfbc052bb28129c63626fe390ac41d22cfcda719.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="309b09df585f0693e6750ee9800dcca1af9f59e14991c44192e51a4ce22b9696.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d54cfc0d7408fa0aec7a308257364fd6676b0d1cb24e84fc6ed325a95dfccb7e.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="068bdb762df491881452915782a1db001e1bd7d44eaf6bc63de0cc6a03a38771.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="e4135f9a08b6455c35b0256042294304f8c20f356703c1e30842711e285684d9.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="e4135f9a08b6455c35b0256042294304f8c20f356703c1e30842711e285684d9.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="6464342d0ad8bd762b831b7ebb7ee39009b8691aa3e4022305d71f8939aee971.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="69c58c0e9019dbea6b003f1329ef122596f50839c49c044a25c149fc0f33e9b9.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="69c58c0e9019dbea6b003f1329ef122596f50839c49c044a25c149fc0f33e9b9.png" title=" 2: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 3: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65871173cb1de50e9749e438c78a56dc03d352ebba9288d025e9d056005ac05e.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="308fa16b7d7ecf3463a7398d79af299884d51c5149e44f89048335240d27d2c3.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="bb58fe236b6c96dee50fde4d2f5d16831152dca586d567a11b2aeea4f6d5fd50.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="f12d85e8fa174b365cb0f18303320c1bff225f927c6cc7f846d77456f56e8367.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d1b8b732d190eaf85fdd06e6c699db90f4dfa7f8ade5dcac9913682d30d2a6ba.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="41ab599433dd3d40cb5a64b523f3e66ef5332cfe21f576e322af1766b4b81306.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="41ab599433dd3d40cb5a64b523f3e66ef5332cfe21f576e322af1766b4b81306.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="eb587e7382800a31a5551851aab6de952b96a60084a12f59770c78cda5ec597d.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="02e02083e776504c6b7b423eb2ef77b2421e6f407e9126f27d945b3948823684.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="02e02083e776504c6b7b423eb2ef77b2421e6f407e9126f27d945b3948823684.png" title=" 3: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 4: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="4b8e1a244b81feaa469dd87457a3ba0dc75e1eff0d3abd32462e542e854f23bc.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="b3d3434cd6a58c96c58405249cdd70ac68e99ab698d6cdfa660b3a6ad23b949e.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0141bda0accdec48725ce158e32aa466ee8968369a0c70f50be3821d3badf5d3.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0141bda0accdec48725ce158e32aa466ee8968369a0c70f50be3821d3badf5d3.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="e098761253492c8fe986a262108adb1aadc3c5ac14ae3449e908ef7e556a35eb.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d1b8b732d190eaf85fdd06e6c699db90f4dfa7f8ade5dcac9913682d30d2a6ba.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="56d611a839408fdbc6b87d0317bb44a035de764d392a774472b0b0ffd8a05724.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="56d611a839408fdbc6b87d0317bb44a035de764d392a774472b0b0ffd8a05724.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="56d611a839408fdbc6b87d0317bb44a035de764d392a774472b0b0ffd8a05724.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="4897db41d7f3f07281b6304e69b82a39d9c002516f422eec80e3803e7ba5d245.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="4897db41d7f3f07281b6304e69b82a39d9c002516f422eec80e3803e7ba5d245.png" title=" 4: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 5: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="4b8e1a244b81feaa469dd87457a3ba0dc75e1eff0d3abd32462e542e854f23bc.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="4da82b654cb01a15244217bc8a8c51883ec7794875a576fe4ea3e82debda5d2a.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="72c19ad6fde69a45c400d60c7eb8849d03526c378a0471205f589b1226311489.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="c1d0c10914b58318cd8f631a3e5b5b5eeb9411f60ce2728bc3e993bd3df55f8e.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="c1d0c10914b58318cd8f631a3e5b5b5eeb9411f60ce2728bc3e993bd3df55f8e.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="c1d0c10914b58318cd8f631a3e5b5b5eeb9411f60ce2728bc3e993bd3df55f8e.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="d1bb27733ab155caba405f2919be773f608b911f7978cbf788bf687e2ee41a01.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="d1bb27733ab155caba405f2919be773f608b911f7978cbf788bf687e2ee41a01.png" title=" 5: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 6: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="cb531df37e036e26d2888ac5ea5d01fcb3ccb792d1a70c617801344c14484114.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="85d4a0d9d0e6df02b83ed45459b15e5b2663d1a7761146a68ccc897dc3e39997.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="f5710d6db36c2b8ab9254a19d536b008a846f3518b2e95493b9276237d5a41cf.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="52f96a7de33231ba737c47082485f455c0358564a02da7cc4870bce480cc985f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="52f96a7de33231ba737c47082485f455c0358564a02da7cc4870bce480cc985f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="c7e63a74a11e622b6ed5cf3d9f8e9446282a712f33e9abfcebee1c3dbc27fb91.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="76ef6e12c8750b95e185904b1bb383dc698abe7e4f2e09c59b9abe709f089456.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="76ef6e12c8750b95e185904b1bb383dc698abe7e4f2e09c59b9abe709f089456.png" title=" 6: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 7: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="4b8e1a244b81feaa469dd87457a3ba0dc75e1eff0d3abd32462e542e854f23bc.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="b0c5694803375cbbfa073893cd533cb1a550c7bada2d6e6be813e0294d019da9.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="866a15bbb1f0c5dd526efb39886d94bc4026ff14018bdcc645da162d527e5e3f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="34b0220a01265ce90dab324fcad0f752bfe9e4651a979ac067c868fcb811798c.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="99d24ca1676c42aebb734d46823d84d2b5641911138edf7f47bb6c7ce9674b0d.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="99d24ca1676c42aebb734d46823d84d2b5641911138edf7f47bb6c7ce9674b0d.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="976a7e3e12d60373fc1aac7ec6dd1dd8381ad3ed159f92db2c9fb6b164f53cd6.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="976a7e3e12d60373fc1aac7ec6dd1dd8381ad3ed159f92db2c9fb6b164f53cd6.png" title=" 7: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 8: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65871173cb1de50e9749e438c78a56dc03d352ebba9288d025e9d056005ac05e.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="8b0b8636ed44d7539addbe7f3034c1e9806d412d710a2f5bc39642ef0baab23e.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="8b0b8636ed44d7539addbe7f3034c1e9806d412d710a2f5bc39642ef0baab23e.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="0c11573b44532721acc9c89d898cee283d7add4db589b5cda4d17d7e6539aec4.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="5e25c46c9b8560f1a953c189777878c5c13479ad031e42da727db79695f7f5d8.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="54ff06aa0e4136a5a69d1e894a1aa3e9f156496956941f25d9ee4f72640004f8.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="42b0937b844448ea492c3eb687f7bd790dda5350e3e4d638ea3a74b359895fc5.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="af3380ce8a5687388d0d91e0f2bb8b19d11250cd63caf0df2efd3219a9404fdc.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="af3380ce8a5687388d0d91e0f2bb8b19d11250cd63caf0df2efd3219a9404fdc.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="f180dd421c437547796110dce89f5df119ca200cec4826e49ec37db2cb8ef95c.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="f180dd421c437547796110dce89f5df119ca200cec4826e49ec37db2cb8ef95c.png" title=" 8: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 9: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="7ad18905be61cf509d109a4074cf6dfa52cdcb9ba808b54c1e21e32470d76b38.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="3ddbed179294c2f716c60c3603fac9f1920bf33185ee8868f765bb91f5ee18b2.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d3d1c45dfe6f2dfeec9264692bb5d00ba33aa20f350d05754826fa1741c8235f.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="faf6eb87cd892d897ec1b905c5aff228f758b299cab16b9b2057ab806926532d.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="faf6eb87cd892d897ec1b905c5aff228f758b299cab16b9b2057ab806926532d.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="703e6d7ba14fdb8b04a144dcaf5e5f7f421f9c257f7cf0b07c49f42a688d2baa.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="e8b0bb80abf066bfae9b23ca9527017a0faab901eff50ff5eb42b88da314f87d.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="e8b0bb80abf066bfae9b23ca9527017a0faab901eff50ff5eb42b88da314f87d.png" title=" 9: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed)" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" 10: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028})" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" Given ingreso al portal demoblaze" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="74a1fd0a49276fb38184822f8b9f47c473a53014678f07aae9856e5ef6398d54.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="fd9421193a0953e55f9f4848b67ede37c2f584ded5a92dcba33d52ac4adfba9a.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="1f876d10087ea5ffbb1edcd5f9b088f26a5cf4b6ca98dc57e5fc8e571e314376.png" title=" When agrego los productos al carrito de compra &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="e97ca3e17a0003458cf01745baa4899ee467296c2ed8641866a4e979b1c0f014.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="65ea44eae669814d657f3acc1f516f02304148d01dea6f0dabf1be857411e4a6.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot;" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And visualizo el carrito con los productos agregados &quot;Samsung galaxy s6&quot; &quot;Nokia lumia 1520&quot; (completed)" width="1366"/>
+                <img src="c26baf14dcea5990c59e62c805285ec0bc345c1fd151a293e841653749c15464.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="d786015d018cd5a33819df652abec1315b0bf1c59523fe0798c4662c63c3a86b.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="b0b9cfff58d3ffc44982fcde1b95360a8a74c6458e194666bc33bdb714d4eca3.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="b8364f3c97700921d505ade84fd405a3534edc25b56e4945004cf6c590401bab.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot;" width="1366"/>
+                <img src="b8364f3c97700921d505ade84fd405a3534edc25b56e4945004cf6c590401bab.png" title=" And completo el formulario de compra &quot;Juan Perez&quot; &quot;Colombia&quot; &quot;Bogota&quot; &quot;12365478965&quot; &quot;07&quot; &quot;2028&quot; (completed)" width="1366"/>
+                <img src="b8364f3c97700921d505ade84fd405a3534edc25b56e4945004cf6c590401bab.png" title=" Then verifico que la compra se haya realizado correctamente" width="1366"/>
+                <img src="635ecb7b2f407256c9920df338b4391a8d7eed32bbca12f764eb53665a615d70.png" title=" Then verifico que la compra se haya realizado correctamente (completed)" width="1366"/>
+                <img src="635ecb7b2f407256c9920df338b4391a8d7eed32bbca12f764eb53665a615d70.png" title=" 10: Realizar flujo de compra con dos productos ({producto1=Samsung galaxy s6, producto2=Nokia lumia 1520, nombre=Juan Perez, pais=Colombia, ciudad=Bogota, numeroTarjeta=12365478965, mes=07, anio=2028}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.1.15</span>
+</div>
+</body>
+</html>

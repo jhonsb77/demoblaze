@@ -1,0 +1,6 @@
+- mediante la herramienta serenity bdd, cucumber, selenium, es posible crear un proyecto de automatización
+que facilita y optimiza la ejecución de pruebas, ahorrando tiempos y reduciendo el error humano.
+- para el portal demoblaze encontramos que podemos comprar cualquier producto, verlo en el carrito de compra
+y posteriormente finalizar con su adquisición.
+- las APIS proporcionadas para la tienda de mascotas, tienen diferentes funcionalidades, como por ejemplo,
+la creacion de una nueva mascota, la modificación de esta, poder consultarla, poder borrarla, etc

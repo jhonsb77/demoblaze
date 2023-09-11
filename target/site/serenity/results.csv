@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Como usuario del portal https://www.demoblaze.com/","Realizar flujo de compra con dos productos","SUCCESS","2023-09-09T20:23:51.977-05:00[America/Bogota]","0.0","338.19"
+"Como usuario de petstore","Realizar el consumo de las APIS de la tienda petstore","SUCCESS","2023-09-09T23:28:03.947-05:00[America/Bogota]","0.0","12.02"
