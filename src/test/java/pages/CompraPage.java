@@ -6,6 +6,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,7 +22,7 @@ public class CompraPage extends PageObject {
     @FindBy(xpath = "//a[contains(text(),'PRODUCT STORE')]")
     WebElementFacade btnInicio;
 
-    @FindBy(xpath = "//a[text()='Add to cart']")
+    @FindBy(xpath = "//*[text()='Add to cart']")
     WebElementFacade btnAddToCart;
 
     @FindBy(id = "cartur")
@@ -60,12 +61,30 @@ public class CompraPage extends PageObject {
     @FindBy(xpath = "//h2[text()='Thank you for your purchase!']")
     WebElementFacade lblPurchaseSuccess;
 
+    @FindBy(xpath = "//button[text()='Next']")
+    WebElementFacade btnNext;
+
 
     public void agregoLosProductosAlCarritoDeCompra(String producto) throws InterruptedException {
         withTimeoutOf(Duration.ofSeconds(5)).waitFor(btnInicio);
-        getDriver().findElement(By.xpath("//a[text()='"+producto+"']")).click();
+        WebElementFacade btnProduct = find(By.xpath("//a[text()='"+producto+"']"));
+        if(!btnProduct.isPresent()){
+            try{
+                scrollWebElementFacade(btnProduct);
+            }catch (Exception e){
+                scrollWebElement(btnNext);
+                btnNext.click();
+            }
+            Thread.sleep(2000);
+            scrollWebElement(btnProduct);
+        }
+        btnProduct.click();
         withTimeoutOf(Duration.ofSeconds(5)).waitFor(btnAddToCart);
-        btnAddToCart.click();
+        try{
+            btnAddToCart.click();
+        }catch (org.openqa.selenium.StaleElementReferenceException e){
+            btnAddToCart.click();
+        }
         WebDriverWait wait = new WebDriverWait(getDriver(), 3);
         waitFor(ExpectedConditions.alertIsPresent());
         System.out.println(getDriver().switchTo().alert().getText());
@@ -104,9 +123,7 @@ public class CompraPage extends PageObject {
         txtCard.sendKeys(numeroTarjeta);
         txtMonth.sendKeys(mes);
         txtYear.sendKeys(anio);
-        JavascriptExecutor js = (JavascriptExecutor) getDriver();
-        WebElementFacade elementFacade =
-                (WebElementFacade) js.executeScript("arguments[0].scrollIntoView(true);", btnPurchase);
+        scrollWebElementFacade(btnPurchase);
         Serenity.takeScreenshot();
         btnPurchase.click();
     }
@@ -117,7 +134,20 @@ public class CompraPage extends PageObject {
         }else{
             fail("la compra no se pudo completar");
         }
-
     }
+
+    public void scrollWebElementFacade(WebElementFacade element){
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
+        WebElementFacade elementFacade =
+                (WebElementFacade) js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public void scrollWebElement(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) getDriver();
+        WebElement elementFacade =
+                (WebElement) js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+
 
 }

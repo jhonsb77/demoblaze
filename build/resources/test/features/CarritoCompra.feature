@@ -11,13 +11,4 @@ Feature: Como usuario del portal https://www.demoblaze.com/
     Then verifico que la compra se haya realizado correctamente
     Examples:
     | producto1         | producto2         | nombre      | pais     | ciudad | numeroTarjeta | mes | anio |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
-    | Samsung galaxy s6 | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
+    | 2017 Dell 15.6 Inch | Nokia lumia 1520  | Juan Perez  | Colombia | Bogota | 12365478965   | 07  | 2028 |
